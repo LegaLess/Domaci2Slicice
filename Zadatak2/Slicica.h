@@ -11,7 +11,6 @@ class Slicica {
 
 public:
 
-	Slicica(int br, string n) : broj(br), naziv(n) { staticID++; }
 
 	Slicica(const Slicica&) = delete;
 
@@ -25,11 +24,15 @@ public:
 
 private:
 
+	Slicica(int br, string n) : broj(br), naziv(n) { if(this) staticID++; }
+
 	static int staticID;
 	int ID = staticID;
 
 	int broj;
 	string naziv;
+
+	friend class Stamparija;
 
 };
 

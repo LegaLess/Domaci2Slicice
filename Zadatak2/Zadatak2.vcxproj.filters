@@ -18,12 +18,18 @@
     <ClInclude Include="Slicica.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Stamparija.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Slicica.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stamparija.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int Slicica::staticID = 0;
+int Slicica::staticID = 1;
 
 int Slicica::getID() { return ID; }
 
@@ -14,6 +14,9 @@ string Slicica::getNaziv() { return naziv; }
 
 ostream& operator<<(ostream& it, const Slicica& s)
 {
-	it << "Slicica " << s.broj << "-" << s.naziv << "(" << s.ID << ")";
+	if (&s) {
+		it << "Slicica " << s.broj << "-" << s.naziv << "(" << s.ID << ")";
+	}
+
 	return it;
 }
