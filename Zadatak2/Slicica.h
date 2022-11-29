@@ -16,11 +16,11 @@ public:
 
 	friend ostream& operator<<(ostream&, const Slicica&);
 
-	int getID();
+	int getID() const;
 
-	int getBroj();
+	int getBroj() const;
 
-	string getNaziv();
+	string getNaziv() const;
 
 private:
 

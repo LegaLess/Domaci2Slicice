@@ -31,7 +31,12 @@ Slicica* Stamparija::stampaj(int br)
 
 }
 
-int Stamparija::brojRazlicitih() { return brojJedinstvenih; }
+int Stamparija::brojRazlicitih() const { return brojJedinstvenih; }
+
+Stamparija::~Stamparija()
+{
+	brisi();
+}
 
 void Stamparija::premesti(Stamparija& s)
 {

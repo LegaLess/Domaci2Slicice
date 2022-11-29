@@ -19,17 +19,13 @@ public:
 
 	Slicica* stampaj(int);
 
-	int brojRazlicitih();
+	int brojRazlicitih() const;
 
 private:
 
 	void premesti(Stamparija&);
 
-	static int brojJedinstvenih;
-
 	string* nazivi;
-
-	string naziviJ[4];
 
 	int len;
 

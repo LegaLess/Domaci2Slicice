@@ -6,11 +6,11 @@ using namespace std;
 
 int Slicica::staticID = 1;
 
-int Slicica::getID() { return ID; }
+int Slicica::getID() const { return ID; }
 
-int Slicica::getBroj() { return broj; }
+int Slicica::getBroj() const { return broj; }
 
-string Slicica::getNaziv() { return naziv; }
+string Slicica::getNaziv() const { return naziv; }
 
 ostream& operator<<(ostream& it, const Slicica& s)
 {

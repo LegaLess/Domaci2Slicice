@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Slicica.h" />
+    <ClInclude Include="Spil.h" />
     <ClInclude Include="Stamparija.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Slicica.cpp" />
+    <ClCompile Include="Spil.cpp" />
     <ClCompile Include="Stamparija.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
