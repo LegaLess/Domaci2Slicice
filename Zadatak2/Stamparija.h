@@ -15,15 +15,11 @@ public:
 
 	Stamparija(const Stamparija&) = delete;
 
-	Stamparija(Stamparija&& s) { premesti(s); }
-
 	Slicica* stampaj(int);
 
 	int brojRazlicitih() const;
 
 private:
-
-	void premesti(Stamparija&);
 
 	string* nazivi;
 
